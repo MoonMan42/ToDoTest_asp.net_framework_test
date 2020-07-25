@@ -7,7 +7,10 @@ namespace ToDoTest.Models
     {
         public int Id { get; set; }
 
-        public ApplicationUser User { get; set; }
+        public ApplicationUser UserAcct { get; set; }
+
+        [Required]
+        public string UserId { get; set; }
 
         [Required]
         [StringLength(150)]
